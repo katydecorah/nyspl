@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<p style="margin-top:1em"><a href="../" class="button">&larr; back</a></p>
+{% for post in site.posts reversed %}
+{% assign hours = post.hours | plus: hours %}
+{% endfor %}
+<table>
+  <tr>
+    <th>Title of Program</th>
+    <th>Program Provider</th>
+    <th>Topic</th>
+    <th>Format</th>
+    <th>Dates</th>
+    <th>Location</th>
+    <th>Hours</th>
+  </tr>
+  {% for post in site.posts reversed %}
+  <tr>
+    <td>{{post.title}}</td>
+    <td>{{post.provider}}</td>
+    <td>{{post.categories}}</td>
+    <td>{{post.format}}</td>
+    <td>{{post.date | date: "%-b %-d, %Y" }}</td>
+    <td>{{post.location}}</td>
+    <td>{{post.hours}}</td>
+  </tr>
+  {% endfor %}
+  <tr>
+    <th colspan="6">Total</th>
+    <th>{{ hours }}</th>
+  </tr>
+</table>

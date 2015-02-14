@@ -2,9 +2,10 @@
 detach:  false
 port:    4000
 host:    127.0.0.1
-baseurl: "" # does not include hostname
+baseurl: "/nypl" # does not include hostname
+permalink: pretty
 
-title: Continuing Education for Public Librarian Certification Record
+title: My Continuing Education for Public Librarian Certification Record
 description: null
 
 issued: 2011-10-19
@@ -12,3 +13,4 @@ expires: 2016-10-19
 certificate_no:
 
 requirements: http://www.nysl.nysed.gov/libdev/cert/conted.htm
+
