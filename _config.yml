@@ -2,7 +2,7 @@
 detach:  false
 port:    4000
 host:    127.0.0.1
-baseurl: "/nypl" # does not include hostname
+baseurl: "/nyspl" # does not include hostname
 permalink: pretty
 
 title: My Continuing Education for Public Librarian Certification Record
