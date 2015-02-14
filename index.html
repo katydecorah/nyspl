@@ -1,0 +1,34 @@
+---
+layout: default
+link: http://www.nysl.nysed.gov/libdev/cert/conted.htm
+---
+
+<div class="two-thirds column" style="margin-top: 25%">
+<h4>{{site.title}}</h4>
+<ul>
+  {% for post in site.posts reversed %}
+  <li>{% if post.link %}<a href="{{post.link}}">{% endif %}{{post.title}}{% if post.link %}</a>{% endif %}</li>
+  {% endfor %}
+</ul>
+
+{% for post in site.posts reversed %}
+{% assign hours = post.hours | plus: hours %}
+{% endfor %}
+
+<h5>{{ hours }} of 60 hours</h5>
+<p><a href="table/" class="button">table view &rarr;</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
